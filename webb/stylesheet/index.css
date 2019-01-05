@@ -1,3 +1,49 @@
 body {
   background-color: lightblue;
 }
+
+
+div.topp {
+  text-align: center;
+}
+
+
+div.meny {
+
+width: 70%;
+background-color:  #005557;
+
+}
+
+
+div.meny ul {
+margin: 0; padding: 0;
+float:left;
+
+}
+
+div.meny ul li {
+display: inline;
+
+}
+
+div.meny ul li a {
+float: left; text-decoration: none;
+color: white;
+padding: 10.5px 11px;
+background-color: #005557
+
+
+
+}
+
+.meny ul  li  a:visited {
+  color: white;
+}
+
+.meny ul li a:hover, .menu_simple ul li .current {
+color: white;
+background-color: #5FD367;
+
+}
+
