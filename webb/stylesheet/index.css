@@ -6,11 +6,13 @@
 /*        KOD UTAN KLASSER                   */
 body {
   background-color: lightblue;
+  margin: 0;
 }
 
 /*             header              */
 div.topp {
   text-align: center;
+
 }
 
 /*        MENYN                   */
@@ -24,6 +26,13 @@ div.meny ul {
 margin: 0; padding: 0;
 float:left;
 
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
 }
 
 div.meny ul li {
@@ -45,3 +54,15 @@ background-color: #005557
 color: white;
 background-color: #5FD367;
 }
+
+
+
+/*        Grupp3             */
+
+.grupp3 img {
+  max-width: 200px;
+  height: 100px;
+}
+
+
+/*        GRID              */
