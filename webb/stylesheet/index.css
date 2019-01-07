@@ -1,142 +1,93 @@
-
-
-
-
-
-/*        KOD UTAN KLASSER                   */
 body {
-  background-color: lightblue;
-  margin: 40px;
+  margin:30px;
 }
 
-/*             header              */
-div.topp {
-  text-align: center;
-
+nav{
+  float: right;
 }
-
-/*        MENYN                   */
-div.meny {
-
-width: 70%;
-background-color:  #005557;
-}
-
-div.meny ul {
-margin: 0; padding: 0;
-float:left;
-
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
-}
-
-div.meny ul li {
-display: inline;
-}
-
-div.meny ul li a {
-float: left; text-decoration: none;
-color: white;
-padding: 10.5px 11px;
-background-color: #005557
-}
-
-.meny ul  li  a:visited {
-  color: white;
-}
-
-.meny ul li a:hover, .menu_simple ul li .current {
-color: white;
-background-color: #5FD367;
-}
-
-
-
-/*        Grupp3             */
-
-.box main-area nested" img {
-  max-width: 200px;
-  height: 100px;
-}
-
-
-/*        GRID              */
-
-
-
 nav ul {
   margin: 0;
 }
 
 nav ul li {
   display: inline;
-}
-nav ul li a{
-  color:whitesmoke;
+  margin-left: 25px;
+  padding-top: 25px;
+  
 }
 
-.site {
-  display: grid;
-  grid-gap: 5px;
-  grid-template-colummns: 1fr 1fr 1fr 1fr;
-
+nav ul li a {
+  color: #595959;
+  padding: 5px;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
 }
+a:hover{
+  color:white;
+  text-shadow: 1px 3px #000000;
+}
+
+/*För hela griden, bakgrundsfärg, font-färg osv. */
+.sida{
+  display: grid; 
+  grid-gap: 4px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  background-color: #eff5f5;
+  color: #609f9f;
+  
+}
+
+/*grid within grid*/
 
 .nested {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-columns: minmax(10px, auto);
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-columns: (minimax 10px, auto);  
 }
-.nested > article{
-  padding: 0.25em;
+.nested > article {
+  padding: .20em;
 }
-
-.box {
-
-
+/*Själva boxarna, d runda kanterna, bakgrundsfärg och fontfärg*/
+.box{
+  background-color: #609f9f;
+    color: #d0e2e2;
   border-radius: 5px;
-  padding: 15px;
-  font-size: 120%;
+  padding:10px;
+}
+.header{
+  grid-column: 1/5;
+    grid-row:1;
+  background-color: #304f4f;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+
 }
 
-.header {
-  grid-column: 1 / 3;
-  grid-row: 1;
-
-}
-
-.sidebar {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grip-gap: 1px;
+.sidebar{
+  grid-column: 5/8;
   grid-row: 1/3;
-  grid-column: 4;
-
-}
-
-.main-area {
-  grid-column: 1/2;
-  grid-row: 2;
-}
-.sidfot {
-  grid-column: 1 / 5;
-  grid-row: 3;
-
-}
-
-.annonser {
-  display: grid;
-  grid-template-columns: 1fr;
-  grip-gap: 1em;
-  grid-row: 2;
-
-
-  border-radius: 5px;
-  font-size: 1.8em;
   text-align:center;
 }
+
+.main-area{
+  grid-column: 1/4;
+  grid-row: 2;
+  text-align: center;
+  
+}
+
+.fot{
+  grid-column: 1/span5;
+    grid-row:3;
+  text-decoration: none;
+  }
+
+.veckan{
+ grid-column: 4/4;
+ grid row: 1;
+ text-align: center;
+ 
+}
+
