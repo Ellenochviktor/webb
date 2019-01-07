@@ -13,7 +13,7 @@ nav ul li {
   display: inline;
   margin-left: 25px;
   padding-top: 25px;
-  
+
 }
 
 nav ul li a {
@@ -31,12 +31,12 @@ a:hover{
 
 /*För hela griden, bakgrundsfärg, font-färg osv. */
 .sida{
-  display: grid; 
+  display: grid;
   grid-gap: 4px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   background-color: #eff5f5;
   color: #609f9f;
-  
+
 }
 
 /*grid within grid*/
@@ -44,7 +44,7 @@ a:hover{
 .nested {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-auto-columns: (minimax 10px, auto);  
+  grid-auto-columns: (minimax 10px, auto);
 }
 .nested > article {
   padding: .20em;
@@ -75,7 +75,7 @@ a:hover{
   grid-column: 1/4;
   grid-row: 2;
   text-align: center;
-  
+
 }
 
 .fot{
@@ -88,6 +88,13 @@ a:hover{
  grid-column: 4/4;
  grid row: 1;
  text-align: center;
- 
+
 }
 
+img
+{
+    max-height:500px;
+    max-width:500px;
+    height:auto;
+    width:auto;
+}
