@@ -15,7 +15,7 @@ nav ul li {
   padding-top: 25px;
 
 }
-
+/*SMeny*/
 nav ul li a {
   color: #595959;
   padding: 5px;
@@ -56,6 +56,7 @@ a:hover{
   border-radius: 5px;
   padding:10px;
 }
+/*Meny*/
 .header{
   grid-column: 1/8;
     grid-row:1;
@@ -64,33 +65,33 @@ a:hover{
   font-family: Arial, Helvetica, sans-serif;
 
 }
-
+/*sidomeny*/
 .sidebar{
   grid-column: 5/8;
   grid-row: 2/3;
   text-align:center;
 }
-
+/*TEXT*/
 .main-area{
   grid-column: 1/4;
   grid-row: 2;
   text-align: center;
 
 }
-
+/*Footer*/
 .fot{
   grid-column: 1/span5;
     grid-row:3;
   text-decoration: none;
   }
-
+/*Bildbox*/
 .veckan{
  grid-column: 4/4;
  grid-row: 2;
  text-align: center;
 
 }
-
+/*bild*/
 img
 {
     max-height:500px;
