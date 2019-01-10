@@ -30,8 +30,9 @@ nav ul li a {
  
 }
 a:hover{
-  color:white;
-  text-shadow: 1px 3px #000000;
+  color:#75a3a3
+;
+
 }
 
 /*För hela griden, bakgrundsfärg, font-färg osv. */
@@ -59,7 +60,8 @@ a:hover{
 .header{
   grid-column: 1/8;
     grid-row:1;
-  background-color: #304f4f;
+  background-color: #b3cccc;
+  color:#5c8a8a;
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
   padding-left: 30px;
